@@ -8,9 +8,15 @@
 ## 対応予定ブラウザ
 - ニコニコ動画
 
-### 環境構築
+## 環境構築
 ` docker-compose build `
 
 ` docker-compose run --rm node npm install `
 
 ` docker-compose up -d `
+
+## 開発環境
+| Container | front      |
+| --------- | ---------- |
+| Docker    | NEXT.js    |
+|           | TypeScript |
