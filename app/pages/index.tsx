@@ -18,8 +18,8 @@ const Home: NextPage = () => {
     return (
       <>
         {
-          urls.map((data: URL) => {
-            return <MovieDisplay url={data} />
+          urls.map((data, index) => {
+            return <MovieDisplay url={data} key={index} />
           })
         }
       </> 
@@ -28,11 +28,13 @@ const Home: NextPage = () => {
 
   return (
     <div>
-      <h1>DobTube</h1>
       <div>
+        <h2>DobTube</h2>
         <InputUrl urls={urls} setUrls={setUrls} />
-        {ForUrls(urls)}
       </div>
+        <div style={{ width: "100vw", height: "45vh", display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+          {ForUrls(urls)}
+        </div>
     </div>
   );
 };
