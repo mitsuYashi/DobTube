@@ -14,17 +14,16 @@ const InputUrl: React.FC<Props> = ({urls, setUrls}) => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // console.log(urlRef.current!.value)
     setUrls([...urls, new URL(urlRef.current!.value)]);
     urlRef.current!.value = "";
   };
 
   useEffect(() => {
-    console.log(urls);
+    // console.log(urls);
   }, [urls]);
 
   return (
-    <form onSubmit={handleSubmit} style={{position: 'absolute', top: 10, right: 10}}>
+    <form onSubmit={handleSubmit} style={{position: 'absolute', top: 25, right: 25}}>
       <input type="url" ref={urlRef} pattern="https://.*" required />
       <input type="submit" value="表示" />
     </form>
