@@ -4,9 +4,9 @@
 ## 対応ブラウザ
 - YouTube
 - PrHu(R18)
+- ニコニコ動画
 
 ## 対応予定ブラウザ
-- ニコニコ動画
 
 ## 環境構築
 ` docker-compose build `
